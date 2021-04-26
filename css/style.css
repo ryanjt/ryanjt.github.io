@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+html {
+    font-family: 'Roboto', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 601px) {
+    body {
+        font-size: 30px;
+        padding-top: 100px;
+        -webkit-text-stroke-width: 0.2px;
+        background-color: #112240;
+    }
+    .moveBut {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        margin-top: 1%;
+    }
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    i:hover {
+        font-size: 100px;
+    }
+    .about {
+        margin-top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        -webkit-text-stroke-width: 0.1px;
+        color: white;
+        width: 1000px;
+    }
+    .about i {
+        font-size: 30px;
+    }
+    .skills {
+        margin-top: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        -webkit-text-stroke-width: 0.1px;
+        color: white;
+        width: 1000px;
+        margin-bottom: 200px;
+        padding-top: 200px;
+    }
+    .skills i {
+        font-size: 30px;
+    }
+    .skills ul {
+        color: grey;
+    }
+    .projects {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        -webkit-text-stroke-width: 0.1px;
+        color: white;
+        width: 80%;
+    }
+    .projects i {
+        font-size: 30px;
+    }
+    .contact {
+        margin-top: 600px;
+        overflow: auto;
+        padding: 150px;
+        text-align: left;
+        -webkit-text-stroke-width: 0.1px;
+        color: white;
+        float: left;
+        width: 1000px;
+    }
+    .contact i {
+        font-size: 30px;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /* this adds the "card" effect */
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+        color: grey;
+    }
+    .column {
+        float: left;
+        width: 50%;
+        padding: 0 10px;
+    }
+    .row {
+        margin: 0 -15px;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    * {
+        box-sizing: border-box;
+    }
+}
+
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
