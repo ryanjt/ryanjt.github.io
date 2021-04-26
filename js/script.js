@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     getProjects().then(response => {
         $.each(response, function(i) {
-            var templateString = '<div class="column"><div class="card"><h2>' + response[i].name + '</h2><p>' + response[i].description + '</p><a href="' + response[i].html_url + '"><button type="button" href="#skills" class="btn btn-primary moveBut btn-lg">View Project <i>→</i></button></a></div></div>';
+            var templateString = '<div class="column"><div class="card"><h2>' + response[i].name + '</h2><p>' + response[i].description + '</p><a href="' + response[i].html_url + '"><span class="badge bg-success">' + response[i].language + '</span><button type="button" href="#skills" class="btn btn-primary projBut">View Project <i>→</i></button></a></div></div>';
             $('#test12').append(templateString);
         })
     })
@@ -39,6 +39,13 @@ $(document).ready(function() {
 
 
 async function getProjects() {
+    const response = fetch("https://api.github.com/users/ryanjt/repos")
+        .then(x => x.text())
+        .then(y => projects = JSON.parse(y));
+
+    return response;
+}
+async function getLanguages() {
     const response = fetch("https://api.github.com/users/ryanjt/repos")
         .then(x => x.text())
         .then(y => projects = JSON.parse(y));
