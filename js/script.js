@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     getProjects().then(response => {
         $.each(response, function(i) {
-            var templateString = '<div class="column"><div class="card"><h2>' + response[i].name + '</h2><p>' + response[i].description + '</p><a href="' + response[i].html_url + '"><span class="badge bg-success">' + response[i].language + '</span><button type="button" href="#skills" class="btn btn-primary projBut">View Project <i>→</i></button></a></div></div>';
+            var templateString = '<div class="column"><div class="card col-md-10"><h2 style="font-weight:bold;">' + response[i].name + '</h2><h5>' + response[i].description + '</h5><a href="' + response[i].html_url + '"><span class="badge bg-success">' + response[i].language + '</span><button type="button" href="#skills" class="btn btn-primary projBut">View Project <i>→</i></button></a></div></div>';
             $('#test12').append(templateString);
         })
     })

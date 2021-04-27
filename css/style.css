@@ -20,13 +20,8 @@ html {
     }
     .projBut {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
         color: white;
         margin-top: 1%;
-        width: 150px;
-        height: 60px;
-        text-align: center;
     }
     a {
         color: #FFFFFF;
@@ -70,10 +65,10 @@ html {
         text-align: left;
         -webkit-text-stroke-width: 0.1px;
         color: white;
-        width: 80%;
+        width: 60%;
     }
     .projects i {
-        font-size: 30px;
+        font-size: 15px;
     }
     .contact {
         margin-left: auto;
@@ -102,7 +97,6 @@ html {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         /* this adds the "card" effect */
         padding: 10px;
-        text-align: center;
         background-color: #f1f1f1;
         color: grey;
     }
@@ -112,15 +106,7 @@ html {
         padding: 5px;
     }
     .row {
-        margin: 0 -15px;
-    }
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    * {
-        box-sizing: border-box;
+        margin: 0px;
     }
     .bottom {
         margin-left: auto;
