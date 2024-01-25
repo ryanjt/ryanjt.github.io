@@ -7,8 +7,8 @@ class AboutMe extends Component {
         return (
             <>
                 <Box m="2">
-                    <Heading as="h1"> Ryan Thompson </Heading>
-                    <Heading as="h3" size='lg'>.Net Software Engineer</Heading>
+                    <Heading as="h1" color="#FAFAFF"> Ryan Thompson </Heading>
+                    <Heading as="h4" size='md' color="#FAFAFF">Software Engineer</Heading>
                     <Box m="2">
                     <Text fontSize='lg'>I enjoy building software solutions! I love dabbling in front end and backend development.</Text>
                     </Box>

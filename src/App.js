@@ -1,21 +1,26 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, SimpleGrid, Box } from '@chakra-ui/react'
+import theme from "./theme.fonts";
 import './App.css';
 import LeftSide from './Components/Left/LeftSide';
 import RightSide from './Components/Right/RightSide';
 function App() {
   return (
-    <ChakraProvider>
-    <div className="App">
-      <div className="row">
-        <div className="column">
-          <LeftSide/>
-        </div>
-        <div className="column">
-        <RightSide/>
-        </div>
+    <ChakraProvider theme={theme}>
+      <div className="App">
+        <SimpleGrid columns={2} spacingX='40px' spacingY='20px' minChildWidth="400px">
+          <Box>
+          <LeftSide />
+          </Box>
+         
+            
+            <Box>
+            <RightSide />
+            </Box>
+          
+        </SimpleGrid>
+       
+
       </div>
-     
-    </div>
     </ChakraProvider>
   );
 }

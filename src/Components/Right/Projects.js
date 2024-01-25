@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import ProjectCard from "./ProjectCard";
-import { Card, CardHeader, CardBody, CardFooter, Text, Badge, Heading, Box, Accordion,
-    AccordionItem,
-    AccordionButton,
-    AccordionPanel,
-    AccordionIcon, } from '@chakra-ui/react'
+import { Box, Accordion } from '@chakra-ui/react'
 
 class Projects extends Component {
     state = { projects: [], isLoading: true, error: null };
@@ -45,7 +41,7 @@ class Projects extends Component {
 
         return (
             <>
-                <Box m="2">
+                <Box m="4" pt="35">
                     {
 
                         this.renderProject()
