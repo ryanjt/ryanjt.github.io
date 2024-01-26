@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import ExperienceCard from "./ExperienceCard";
 import experienceData from "../../Data/experience";
-import { Box } from '@chakra-ui/react'
+import { Box, Heading } from '@chakra-ui/react'
+import SectionHeader from "../SectionHeader";
+
 class Experience extends Component {
     render() {
         return (
             <>
-                <Box pt="35" m="4">
+              <SectionHeader title="Experience"/>
+                <Box pt="30" m="4">
                 {
                     
                     Object.values(experienceData).map(item => {

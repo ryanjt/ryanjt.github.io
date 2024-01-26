@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { Text, Box } from '@chakra-ui/react'
-
+import { Text, Box, Heading } from '@chakra-ui/react'
+import SectionHeader from "../SectionHeader";
 class AboutMeDetail extends Component{
     render(){
         return(
             <>
-            <Text>About me</Text>
+            <SectionHeader title="About me"/>
             <Box m="35">
             <Text fontSize="lg" m="4">I have been tinkering and playing around with computers since 10! I love to problem solve, develop, design and tinker with software and hardware!
                     Learning new things and overcoming problems is my passion.

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ProjectCard from "./ProjectCard";
-import { Box, Accordion } from '@chakra-ui/react'
-
+import { Box, Accordion, Heading } from '@chakra-ui/react'
+import SectionHeader from "../SectionHeader";
 class Projects extends Component {
     state = { projects: [], isLoading: true, error: null };
 
@@ -41,6 +41,7 @@ class Projects extends Component {
 
         return (
             <>
+                <SectionHeader title="Projects"/>
                 <Box m="4" pt="35">
                     {
 
